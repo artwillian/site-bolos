@@ -14,7 +14,9 @@
 </header>
 
 <div style="text-align:center; margin:20px;">
-    <a class="botao" href="https://wa.me/5541999849050" target="_blank">
+    <a class="botao whatsapp"
+       data-mensagem="Olá! Gostaria de fazer um pedido pelo WhatsApp 😊"
+       target="_blank">
         📲 Pedir pelo WhatsApp
     </a>
 </div>
@@ -43,8 +45,8 @@
             <img src="imagens/Bolo de limão.jpeg">
             <h3>Bolo de limão</h3>
             <p>R$ 35,00</p>
-            <a class="botao"
-               href="https://wa.me/5541999849050?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20o%20Bolo%20de%20limão%20%F0%9F%8D%B0.%20Est%C3%A1%20dispon%C3%ADvel%20hoje%3F"
+            <a class="botao whatsapp"
+               data-mensagem="Olá! Gostaria de comprar o Bolo de limão 🍰. Está disponível hoje?"
                target="_blank">
                Comprar
             </a>
@@ -54,8 +56,8 @@
             <img src="imagens/Bolo de fubá.jpeg">
             <h3>Bolo de fubá</h3>
             <p>R$ 32,00</p>
-            <a class="botao"
-               href="https://wa.me/5541999849050?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20o%20Bolo%20de%20fubá%20%F0%9F%8D%B0.%20Est%C3%A1%20dispon%C3%ADvel%20hoje%3F"
+            <a class="botao whatsapp"
+               data-mensagem="Olá! Gostaria de comprar o Bolo de fubá 🍰. Está disponível hoje?"
                target="_blank">
                Comprar
             </a>
@@ -66,20 +68,18 @@
 
 <section id="encomendas">
     <h2>🎂 Encomendas</h2>
-    <p>
-        Fazemos bolos sob encomenda.
-    </p>
-    <a class="botao"
-   href="https://wa.me/5541999849050?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda%20de%20bolo%20personalizado.%20Podemos%20conversar%3F"
-   target="_blank">
-   Fazer encomenda
-</a>
+    <p>Fazemos bolos sob encomenda.</p>
 
+    <a class="botao whatsapp"
+       data-mensagem="Olá! Gostaria de fazer uma encomenda de bolo personalizado. Podemos conversar?"
+       target="_blank">
+        Fazer encomenda
+    </a>
 </section>
 
 <section id="contato">
     <h2>Contato</h2>
-    <p>📞 WhatsApp: (41) 99984-9050</p>
+    <p>📞 WhatsApp: (41) 9 9984-9050</p>
     <p>📸 Instagram: @deliciasboloscaseiros</p>
 </section>
 
@@ -87,15 +87,16 @@
     <p>© 2026 - Delícias Bolos Caseiros</p>
 </footer>
 
+<!-- SCRIPT CENTRALIZADO DO WHATSAPP -->
+<script>
+    const telefoneWhatsApp = "5541999849050"; // 55 + DDD + número
+
+    document.querySelectorAll(".whatsapp").forEach(botao => {
+        const mensagem = botao.getAttribute("data-mensagem");
+        const mensagemCodificada = encodeURIComponent(mensagem);
+        botao.href = `https://wa.me/${telefoneWhatsApp}?text=${mensagemCodificada}`;
+    });
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
