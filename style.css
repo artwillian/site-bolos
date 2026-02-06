@@ -4,25 +4,44 @@ body {
     background-color: #fff5f7;
 }
 
+/* ===== TOPO COM BANNER ===== */
 .topo {
-    background-image: url("imagens/banner-topo.PNG");
+    background-image: url("imagens/banner-topo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    color: #5c3a1e; /* marrom/dourado combina com bolo */
-    padding: 60px 20px;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+    color: #5c3a1e;
+    padding: 20px;
 }
 
+.topo h1 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+
+.topo p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Fundo para legibilidade */
 .topo h1,
 .topo p {
-    background-color: rgba(255, 255, 255, 0.7);
-    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 8px 16px;
     border-radius: 8px;
 }
 
+/* ===== MENU ===== */
 nav {
     background-color: #f06595;
     text-align: center;
@@ -36,6 +55,7 @@ nav a {
     font-weight: bold;
 }
 
+/* ===== CONTEÚDO ===== */
 section {
     padding: 30px;
     max-width: 1000px;
@@ -58,6 +78,7 @@ h2 {
     border-radius: 10px;
 }
 
+/* ===== BOTÕES ===== */
 .botao {
     display: inline-block;
     background-color: #d6336c;
@@ -68,6 +89,14 @@ h2 {
     margin-top: 10px;
 }
 
+/* ===== CATÁLOGO ===== */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ===== RODAPÉ ===== */
 footer {
     background-color: #d6336c;
     color: white;
@@ -75,27 +104,26 @@ footer {
     padding: 15px;
 }
 
-
-.catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+    .topo {
+        min-height: 160px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .topo p {
+        font-size: 14px;
+    }
+
     nav a {
         display: block;
         margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 24px;
     }
 
     section {
         padding: 20px;
     }
 }
-
-
-
