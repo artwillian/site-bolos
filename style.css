@@ -5,7 +5,7 @@ body {
 }
 
 .topo {
-    background-image: url("imagens/banner-topo.png");
+    background-image: url("imagens/banner-topo.PNG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,5 +96,6 @@ footer {
         padding: 20px;
     }
 }
+
 
 
