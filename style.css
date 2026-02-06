@@ -4,10 +4,14 @@ body {
     background-color: #fff5f7;
 }
 
-header {
-    background-color: #d6336c;
-    color: white;
-    padding: 30px;
+.topo {
+    background-image: url("imagens/banner-topo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #5c3a1e; /* marrom/dourado combina com bolo */
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -84,3 +88,4 @@ footer {
         padding: 20px;
     }
 }
+
