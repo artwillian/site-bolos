@@ -15,6 +15,14 @@ body {
     text-align: center;
 }
 
+.topo h1,
+.topo p {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
 nav {
     background-color: #f06595;
     text-align: center;
@@ -88,4 +96,5 @@ footer {
         padding: 20px;
     }
 }
+
 
